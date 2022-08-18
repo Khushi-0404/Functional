@@ -1,0 +1,27 @@
+.container{
+    background-color: lightgrey;
+  width: 370px;
+  border: 15px solid green;
+  padding: 40px;
+  margin: 10px;
+}
+.user{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border: 2px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+body{
+    background-color: blanchedalmond;
+}
+#light{
+    background-color: aliceblue;
+
+}
+#dark{
+    background-color: blueviolet;
+    color: aliceblue;
+}
