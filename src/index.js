@@ -13,13 +13,15 @@ import { Provider } from 'react-redux';
 //const store=createStore(reducer)
 //import store from './17Aug/store'
 //import App from './17Aug/App'
-import App from './18Aug/App';
+//import App from './18Aug/App';
+import App from"./18Aug using Async/App"
 import { configureStore } from '@reduxjs/toolkit';
-import loginReducer from './18Aug/Redux toolkit/reducers/loginReducer';
+//import loginReducer from './18Aug/Redux toolkit/reducers/loginReducer';
+import userReducer from './18Aug using Async/CRUD/userSlice';
 const store=configureStore({
     reducer:{
-        //fill it
-        userinfo:loginReducer
+        
+        user:userReducer
     }
 })
 const root = ReactDOM.createRoot(document.getElementById('root'));
