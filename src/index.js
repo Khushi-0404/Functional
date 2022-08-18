@@ -11,13 +11,22 @@ import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 //import reducer from './16Aug/Reducer/index';
 //const store=createStore(reducer)
-import store from './17Aug/store'
-import App from './17Aug/App'
+//import store from './17Aug/store'
+//import App from './17Aug/App'
+import App from './18Aug/App';
+import { configureStore } from '@reduxjs/toolkit';
+import loginReducer from './18Aug/Redux toolkit/reducers/loginReducer';
+const store=configureStore({
+    reducer:{
+        //fill it
+        userinfo:loginReducer
+    }
+})
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Provider store={store}>
     <App />
-</Provider>
+    </Provider>
     //<App />
     //<FormHook></FormHook>
  
