@@ -1,0 +1,112 @@
+.container{
+    background-color:rgb(66, 61, 61);
+  width: 100%;
+  border: 15px solid rgb(96, 96, 126);
+  padding: 5px;
+  margin: 10px;
+}
+.container:hover{
+    box-shadow: red 0px 54px 55px, red 0px -12px 30px;
+}
+.user{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    
+    
+}
+body{
+    background-color: #0a0900;
+    background-image: url("https://www.transparenttextures.com/patterns/silver-scales.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+#light{
+    background-color: #d6f200;
+background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    color: black;
+}
+#dark{
+    background-color: #001617;
+background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    color: aliceblue;
+}
+.nav{
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+    
+}
+.first,.second{
+    text-decoration: none;
+    color: inherit;
+    font-size: large;
+}
+.first:hover,.second:hover{
+    background-color:gray;
+}
+.username,.email,.phone,.id{
+    width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;
+        color: #0a0900;
+        
+}
+.form{
+    border: 3px solid black;   
+    width:50%;
+    margin-left: 25%;
+    color: #f1f1f1;
+    margin-top: 5%;
+    box-shadow:red 0px 54px 55px, red 0px -12px 30px;
+    }   
+
+.add,.update{
+    background-color:black;   
+       width: 50%;  
+       margin-left: 25%;
+        color: white;   
+        padding: 15px;  
+        font-size: large; 
+        
+        border: none;   
+        cursor: pointer;   
+}
+.add:hover,.update:hover{
+    background-color: green;
+}
+.head{
+    text-align: center;
+    background-color: black;
+    color: #f1f1f1;
+}
+.fa{
+margin-left: 80%;
+
+font-size: large;
+}
+.fas{
+    margin-left: 5%;
+    font-size: large;
+    text-decoration: none;
+}
+.theme{
+    color: #f1f1f1;
+
+}
+.switch{
+    margin-left: 85%;
+}

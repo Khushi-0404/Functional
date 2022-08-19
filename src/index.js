@@ -15,15 +15,12 @@ import { Provider } from 'react-redux';
 //import App from './17Aug/App'
 //import App from './18Aug/App';
 import App from"./18Aug using Async/App"
-import { configureStore } from '@reduxjs/toolkit';
+//import { configureStore } from '@reduxjs/toolkit';
 //import loginReducer from './18Aug/Redux toolkit/reducers/loginReducer';
-import userReducer from './18Aug using Async/CRUD/userSlice';
-const store=configureStore({
-    reducer:{
-        
-        user:userReducer
-    }
-})
+import store from './18Aug using Async/store';
+import {fetchUsers} from'./18Aug using Async/userSlice'
+store.dispatch(fetchUsers())
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Provider store={store}>
